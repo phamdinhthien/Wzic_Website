@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Songs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body id="bodySongs">
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+    </div>
+
+
+
+    <div class="containerSongs">
+        <div class="dish">
+            <img src="../images/Songs/black.jpg" alt="background">
+            <div class="lastCircle"></div>
+        </div>
+
+        <div class="title"></div>
+
+        <div class="player">
+            <div id="pre" onClick="preSong()">
+                <img src="../images/Songs/Pre.png" width="44" height="44" alt="pre">
+            </div>
+
+            <div id="play" onClick="playOrPause()">
+                <img src="../images/Songs/Play.png" width="44" height="44" alt="play">
+            </div>
+
+            <div id="next" onClick="nextSong()">
+                <img src="../images/Songs/Next.png" width="44" height="44" alt="next">
+            </div>
+        </div>
+
+        <div class="Bar">
+            <div id="progressBar"></div>
+            <div id="circle"></div>
+        </div>
+
+        <div id="timeOfSong">
+            <span id="currentTime">00:00</span>/<span id="duration">00:00</span>
+        </div>
+
+        <div id="volume">
+            <div id="decreaseVolume" onClick="decreaseVolume()"> - </div>
+
+            <div id="iconVolume" onClick="iconVolume()"> <i class="fa fa-volume-up"></i> </div>
+
+            <div id="increaseVolume" onClick="increaseVolume()"> + </div>
+        </div>
+
+        <ul class="listOfSongs">
+            <li nth="0">Counting Stars - OneRepublic</li>
+            <li nth="1">Em Cua Ngay Hom Qua - Sơn Tùng MTP</li>
+            <li nth="2">Như Những Phút Ban Đầu - Hoài Lâm</li>
+        </ul>
+
+    </div>
+</body>

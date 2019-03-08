@@ -1,0 +1,90 @@
+﻿.menuCircle {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #8395a7;
+    left: 15%;
+}
+
+    .menuCircle::before {
+        content: 'Menu';
+        font-size: 12px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        color: #FFFF00;
+        text-shadow: 0 0 7px #FFFF00;
+        font-weight: bold;
+        position: absolute;
+        left: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s;
+        animation: menuCircle 1s linear infinite;
+    }
+
+@keyframes menuCircle {
+    0% {
+    transform:rotate(0);
+    }
+
+    20% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    30% {
+        transform: rotate(0deg);
+    }
+
+    35% {
+        transform: rotate(-20deg);
+    }
+
+    40% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+    .menuCircle:hover::before {
+        color: white;
+        transform: rotate(0deg);
+    }
+
+li {
+    display: none;
+}
+
+.menuCircle:hover li {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 25px;
+    left: -50px;
+    margin-left: 1px;
+    transition: 0.5s;
+}
+
+ul li a {
+    color: #ffd800;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    transition: 0.2s;
+    display: block;
+    padding: 5px;
+    margin-left: 2px;
+}
+
+
+ul li:hover a {
+    border-left: 2px solid white;
+}
