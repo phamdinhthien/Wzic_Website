@@ -4,20 +4,49 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/homee.css" rel="stylesheet" />
+    <link href="~/Content/homes.css" rel="stylesheet" />
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
     <link href="~/Content/swiper.min.css" rel="stylesheet" />
     <link href="~/Content/slider.css" rel="stylesheet" />
-    <link href="~/Content/songss.css" rel="stylesheet" />
-    <link href="~/Content/index.css" rel="stylesheet" />
-    <link href="~/Content/videos.css" rel="stylesheet" />
+    <link href="~/Content/song.css" rel="stylesheet" />
+    <link href="~/Content/indexs.css" rel="stylesheet" />
+    <link href="~/Content/videoss.css" rel="stylesheet" />
+    <link href="~/Content/login_bootstrap.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body style="overflow-x:hidden">
     <div class="header">
         <span id="logo"><i class="fa fa-music"></i></span>
         <div id="search"><input type="text" id="inputSearch" placeholder="Input to search"> <span id="icon" class="fa fa-search"></span></div>
-        <span id="login"><svg><rect> </rect></svg>Đăng nhập</span>
+        @*
+        @{
+            if (Session["User"] == null)
+            {
+                <ul>
+                    <li id="menu_login">
+                        <a id="login" href="@Url.Action("Login", "AccountGG")">Log In</a>
+                    </li>
+                </ul>
+            }
+            else
+            {
+                <ul>
+                    <li id="menu_login">
+                        <a id="login" href="#">@Session["User"]</a>
+                        <ul>
+                            <li id="sub_menu_login">
+                                <a id="logout" href="@Url.Action("Logout", "AccountGG")">Log Out</a>
+                        </ul>
+                    </li>
+                </ul>
+
+            }
+        }
+        *@
+        <div class="menu_login">
+            @Html.Partial("_LoginPartial")
+        </div>
+        
     </div>
     <ul class="menuBar">
         <li><i class="fa fa-home"></i>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -25,6 +54,7 @@
         <li><i class="fa fa-user-circle"></i>@Html.ActionLink("Artists", "Artists", "Home")</li>
         <li><i class="fa fa-viadeo"></i>@Html.ActionLink("Videos", "Videos", "Home")</li>
     </ul>
+  
 
     <div class="container body-content">
         @RenderBody()
@@ -33,10 +63,12 @@
     <script src="~/Scripts/jquery-3.3.1.min.js"></script>
     <script src="~/Scripts/swiper.min.js"></script>
     <script src="~/Scripts/home.js"></script>
-    <script src="~/Scripts/artists.js"></script>
-    <script src="~/Scripts/song.js"></script>
-    <script src="~/Scripts/videos.js"></script>
+    <script src="~/Scripts/artistss.js"></script>
+    <script src="~/Scripts/songss.js"></script>
+
+ 
     @RenderSection("scripts", required: false)
+
 </body>
 
 

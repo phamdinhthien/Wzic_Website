@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WzicModelStoreContainer" CdmEntityContainer="WzicEntities">
+    <EntitySetMapping Name="songs">
+      <EntityTypeMapping TypeName="WzicModel.song">
+        <MappingFragment StoreEntitySet="songs">
+          <ScalarProperty Name="ID_Song" ColumnName="ID_Song" />
+          <ScalarProperty Name="titile_song" ColumnName="titile_song" />
+          <ScalarProperty Name="artist_song" ColumnName="artist_song" />
+          <ScalarProperty Name="title_and_artist" ColumnName="title_and_artist" />
+          <ScalarProperty Name="file_song" ColumnName="file_song" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

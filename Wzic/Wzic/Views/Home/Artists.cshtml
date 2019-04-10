@@ -9,75 +9,12 @@
 <body id="Artists">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="front"> <img nth='0' src="~/images/Artists/MTP.jpg" width="400" height="400"></div>
-                <div class="back">
-                    <div class="social">
-                        <a href="https://www.facebook.com/MTP.Fan/"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/sontungmtp/?hl=vi"><i class="fa fa-instagram"></i></a>
-                        <a href="https://twitter.com/mtpsongtung"><i class="fa fa-twitter"></i></a>
-                    </div>
-
-                    <span class="infoArt">
-                        <span>MTP</span>
-                        <br>
-                        <q>
-                            Muốn ngồi được vị trí mà không ai ngồi được thì phải chịu được cảm giác mà không ai chịu được
-                        </q>
-
-                    </span>
-                </div>
-
-            </div>
-            <div class="swiper-slide">
-                <div class="front"> <img nth='1' src="~/images/Artists/alan-walker-sing-me-to-sleep-400x400.jpg" width="400" height="400"> </div>
-                <div class="back">
-                    <div class="social">
-                        <a href="https://www.facebook.com/MTP.Fan/"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.facebook.com/MTP.Fan/"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                    </div>
-
-                    <span class="infoArt">
-                        <span>Alan Walker</span>
-                        <br>
-                        <q>
-                            If this night is not forever <br>
-                            At least we are together <br>
-                            I know I'm not alone<br>
-                            I know I'm not alone
-                        </q>
-                    </span>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="front">
-                    <img nth='1' src="~/images/Artists/shawn-mendes400x400.jpg" width="400" height="400">
-                </div>
-                <div class="back">
-                    <div class="social">
-                        <a href="https://www.facebook.com/MTP.Fan/"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.facebook.com/MTP.Fan/"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                    </div>
-
-                    <span class="infoArt">
-                        <span>Shawn Mendes</span>
-                        <br>
-                        <q>
-                            I think anyone can do anything they dream of if they put their mind to it and put in the work.
-                        </q>
-                    </span>
-                </div>
-            </div>
-
+            @Html.Raw(ViewBag.View);
         </div>
         <!-- Add Pagination -->
 
 
 
-    </div>
     </div>
 
     <!-- Add Arrows -->

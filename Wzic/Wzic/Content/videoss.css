@@ -5,15 +5,15 @@ body {
 }
 /*-----------------------*/
 /*--------contain frame---------------*/	
-/*-----------------------*/		
-.container-videos{
-	position:relative;
-	left:18%;
+/*-----------------------*/
+.container-videos {
+    position: relative;
+    left: 18%;
     top: 0px;
-	display: grid;
-	grid-template-columns: 15% 50%;
-	height:100vh;
-	}
+    display: grid;
+    grid-template-columns: 15% 50%;
+    min-height: 100vh;
+}
 /*-----------------------*/
 /*---------lists of video on the left--------------*/	
 /*-----------------------*/
@@ -75,9 +75,10 @@ body {
 	animation-delay:0.9s;
 	}
 	
-.container-show-video .brand h1:hover{
+/*.container-show-video .brand h1:hover{
 	
 	}
+    */
 /*-----------------------*/
 /*--------one video in lists---------------*/	
 /*-----------------------*/
@@ -127,21 +128,19 @@ body {
     background: url(../images/Videos/DuongMotChieu.jpg);
     background-size: cover;
 }
-	
-.show-video{
-	display: none;
-    justify-content: center;
-    padding-top: 10px;
-	}
 
-/*----------info + lyric of video Part-------------*/	
-.info-video{
-	position: absolute;
-    width: 720px;
-    margin: 10px;
-    margin-top: 26%;
-	margin-left:-5px;
-	}
+.show-video {
+    display: none;
+    justify-content: center;
+    padding-top: 2%;
+    margin-left: 2%;
+}
+
+/*----------info + lyric of video Part-------------*/
+.info-video {
+    position: relative;
+    width: 100%;
+}
 /*-----------------------*/
 /*----------lyric of the song video-------------*/	
 /*-----------------------*/
@@ -180,7 +179,7 @@ button h3{
 /*-----------------------*/
 iframe{
 	width:96%;
-	height:400px;;
+	height:400px;
 	}
 
 /*-----------------------*/

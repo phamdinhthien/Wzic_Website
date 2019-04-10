@@ -1,0 +1,72 @@
+﻿
+.form-horizontal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    background-image: url('../images/Login/amNhac.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+}
+h2 {
+    mix-blend-mode: overlay;
+}
+
+.form-control {
+    margin: 7px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    width: 170px;
+    transition: 0.5s;
+    border: 1px solid aqua;
+}
+
+    .form-control:hover, .form-control:focus{
+        width: 190px;
+        border: 1px solid #093;
+        border-radius: 100px;
+    }
+
+.form-group label.label {
+    position: relative;
+    mix-blend-mode: overlay;
+}
+
+input.btn.btn-default, button#Google {
+    background: #2c3e50d9;
+    outline: none;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    text-align: center;
+    border: 1.5px #2c3e509e solid;
+    color: #a3efbf;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+section#socialLoginForm {
+    width: 150px;
+    height: 150px;
+    background: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    left: 62%;
+    top: 50%;
+    color: #4a555f;
+    border-radius: 15px;
+}

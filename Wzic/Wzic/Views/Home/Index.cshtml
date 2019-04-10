@@ -2,17 +2,8 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="containerIndex">
-    	<div class="box leftIndex">
-        
-        </div>
-        
-        <div class="box contentIndex">
-        
-        </div>
-        
-        <div class="box rightIndex">
-        
-        </div>
-        
- </div>
+<ul class="container-box">
+    <li class="box box1">@Html.ActionLink("Songs", "Songs", "Home")</li>
+    <li class="box box2">@Html.ActionLink("Artists", "Artists", "Home")</</li>
+    <li class="box box3">@Html.ActionLink("Videos", "Videos", "Home")</li>
+</ul>

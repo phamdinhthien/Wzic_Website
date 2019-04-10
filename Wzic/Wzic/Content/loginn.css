@@ -1,0 +1,74 @@
+/* CSS Document */
+
+body{
+	background:#576574;
+	}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    background-image: url('../images/Login/amNhac.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+}
+	
+form h2{
+    mix-blend-mode: overlay;
+}
+
+input[type="text"],
+input[type="password"]
+	{
+		margin: 7px;
+		border:none;
+		outline:none;
+		padding:10px;
+		border-radius:50px;
+		text-align:center;
+		width: 170px;
+		transition:0.5s;
+		border: 1px solid aqua;
+		
+	}
+
+input[type="submit"]
+	{
+		outline: none;
+		padding: 2px;
+		width: 60px;
+		height: 30px;
+		border-radius: 29px;
+		border: none;
+		background: linear-gradient(45deg, #ffff00b8, aqua);
+		margin: 10px;
+		mix-blend-mode: hard-light;
+		color: #9C27B0;
+		font-size: 15px;
+		cursor:pointer;
+	}
+	
+input[type="text"]:hover,
+input[type="password"]:hover
+{
+	width:190px;
+	border: 1px solid #093;
+	border-radius:100px;
+	}
+	
+	
+input[type="text"]:focus,
+input[type="password"]:focus
+{
+	width:190px;
+	border: 1px solid #093;
+	border-radius:100px;
+	}
+
