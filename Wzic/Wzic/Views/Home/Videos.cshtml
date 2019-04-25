@@ -4,17 +4,15 @@
     Layout = "~/Views/Shared/videos.cshtml";
 }
 
+<div id="searchBar">
+    <input id="query" type="text" placeholder="Type Something" />
+    <button onclick="search()" class="search-btn">Search</button>
+</div>
 <div class="container-videos">
-    <div class="list-of-videos">
-        <div nth="0" class="one-video"> <p></p></div>
-        <div nth="1" class="one-video"> <p></p></div>
-        <div nth="2" class="one-video"> <p></p></div>
-        <div nth="3" class="one-video"> <p></p></div>
-        <div nth="4" class="one-video"> <p></p></div>
-        <div nth="5" class="one-video"> <p></p></div>
-        <div nth="6" class="one-video"> <p></p></div>
+    <div id="list-of-videos">
+
     </div>
-    <div class="container-show-video">
+    <div id="container-show-video">
         <div class="brand">
             <h1>
                 <span>W</span>
@@ -24,15 +22,15 @@
             </h1>
         </div>
         <div class="show-video">
-            <iframe src="" frameborder="0" allowfullscreen></iframe>
+            <iframe src="" frameborder="0" allowfullscreen id="bigFrame"></iframe>
             <div class="info-video">
                 <hr>
                 <h2></h2>
                 <hr>
-                <button type="submit" class="show-lyric">
-                    <h3>Lyric</h3>
+                <button type="submit" class="show-info">
+                    <h3>Info</h3>
                 </button>
-                <div class="lyric"> </div>
+                <div class="info"> </div>
             </div>
         </div>
     </div>
