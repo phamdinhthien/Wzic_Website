@@ -210,28 +210,29 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="ViewModel\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\DefaultConnection.sdf" />
     <Content Include="Content\font-awesome.min.css" />
-    <Content Include="Content\homes.css" />
-    <Content Include="Content\indexs.css" />
+    <Content Include="Content\home.css" />
+    <Content Include="Content\index_home.css" />
     <Content Include="Content\loginn.css" />
     <Content Include="Content\login_bootstrap.css" />
-    <Content Include="Content\slider.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\artists.css" />
     <Content Include="Content\song.css" />
     <Content Include="Content\swiper.min.css" />
-    <Content Include="Content\videoView.css" />
     <Content Include="Content\videoss.css" />
+    <Content Include="Content\videoView.css" />
+    <Content Include="images\Artists\EdSheeran.jpg" />
+    <Content Include="images\Artists\JB.jpg" />
     <Content Include="images\Login\amNhac.jpg" />
     <Content Include="images\Songs\backgroundSong.png" />
     <Content Include="images\Artists\shawn-mendes400x400.jpg" />
+    <Content Include="images\Songs\MLTR.jpg" />
     <Content Include="images\Songs\MTP.jpg" />
-    <Content Include="images\Videos\ashes_deadpool.jpg" />
+    <Content Include="images\Songs\Perfect.jpg" />
     <Content Include="images\Videos\bgrMusic2.jpg" />
-    <Content Include="images\Videos\DuongMotChieu.jpg" />
-    <Content Include="images\Videos\hongkong1.jpg" />
     <Content Include="Models\WizOfDatabase.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>WizOfDatabase.edmx</DependentUpon>
@@ -242,12 +243,13 @@
       <DependentUpon>WizOfDatabase.edmx</DependentUpon>
       <LastGenOutput>WizOfDatabase.cs</LastGenOutput>
     </Content>
+    <Content Include="musics\Perfect.mp3" />
+    <Content Include="musics\You Took My Heart Away.mp3" />
     <Content Include="Scripts\artistss.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="images\Artists\alan-walker-sing-me-to-sleep-400x400.jpg" />
     <Content Include="images\Songs\black.jpg" />
     <Content Include="images\Songs\hoaiLam.jpg" />
@@ -260,8 +262,6 @@
     <Content Include="musics\Counting Stars - OneRepublic.mp3" />
     <Content Include="musics\EmCuaNgayHomQua-SonTungMTP-2882720_hq.mp3" />
     <Content Include="musics\Hoài Lâm – Như Những Phút Ban Đầu .mp3" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
@@ -309,19 +309,9 @@
     <Content Include="Models\WizOfDatabase.edmx.diagram">
       <DependentUpon>WizOfDatabase.edmx</DependentUpon>
     </Content>
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\home.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\songss.js" />
+    <Content Include="Scripts\songs.js" />
     <Content Include="Scripts\swiper.min.js" />
     <Content Include="Scripts\videoss.js" />
     <Content Include="Web.config">
@@ -355,8 +345,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

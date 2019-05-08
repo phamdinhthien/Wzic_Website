@@ -1,0 +1,194 @@
+
+/* CSS Document */
+/*--------------------------------------*/
+/*----------------Set Default----------*/
+/*------------------------------------*/
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
+}
+/*--------------------------------------*/
+/*----------------Header Part----------*/
+/*------------------------------------*/
+.header {
+    width: 100%;
+    height: 55px;
+    background: #2c3e50;
+    position: relative;
+}
+/*--------------------------------------*/
+/*----------------Logo on Header----------*/
+/*------------------------------------*/
+#logo {
+    font-size: 38px;
+    color: #3498db;
+    position: absolute;
+    left: 230px;
+}
+/*--------------------------------------*/
+/*----------------Search on header----------*/
+/*------------------------------------*/
+#search {
+    position: relative;
+    left: 300px;
+}
+
+div #inputSearch {
+    position: absolute;
+    width: 500px;
+    height: 25px;
+    top: 11px;
+    left: 0px;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+/*--------------------------------------*/
+/*----------------Icon in "inputSearch"----------*/
+/*------------------------------------*/
+div.header #search #icon {
+    font-size: 18px;
+    position: absolute;
+    top: 15px;
+    left: 490px;
+}
+/*--------------------------------------*/
+/*----------------Login on header----------*/
+/*------------------------------------*/
+.header .menu_login {
+    position: absolute;
+    right: 2em;
+
+}
+    .header ul{
+        width: auto;
+        height: auto;
+    }
+
+.header .menu_login ul li {
+    list-style-type: none;
+    width: 70px;
+    height: 10px;
+    display:table-cell;
+}
+
+.header .menu_login li a {
+    display: block;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid white;
+    margin-right: 5px;
+}
+
+
+    /*--------------------------------------*/
+    /*----------------Menu bar----------*/
+    /*------------------------------------*/
+.menuBar {
+    width: 100%;
+    position: relative;
+    background: #bdc3c7;
+    top: -2.3em;
+    left: 0;
+}
+    /*--------------------------------------*/
+    /*----------------Icon----------*/
+    /*------------------------------------*/
+    .menuBar i {
+        position: absolute;
+        top: 8px;
+    }
+/*--------------------------------------*/
+/*----------------Icon of each elements of menu----------*/
+/*------------------------------------*/
+.fa {
+    transition: 0.5s;
+}
+
+/*--------------------------------------*/
+/*----------------Each elements of menu----------*/
+/*------------------------------------*/
+ul.menuBar li {
+    position: relative;
+    display: inline-table;
+    list-style-type: none;
+    left: 16.5%;
+    margin-right: 5px;
+    padding: 0px 10px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+}
+
+    ul.menuBar li a {
+        color: #000;
+        text-align: center;
+        padding: 25px;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+    }
+
+    ul.menuBar li:hover {
+        background: #e0e6ea;
+    }
+
+        ul.menuBar li:hover a {
+            color: #ffd800;
+        }
+
+        ul.menuBar li:hover .fa {
+            font-size: 23px;
+            color: #3498db;
+        }
+
+#tonggle-menu {
+    display: none;
+}
+@media only screen and (max-width: 1025px) {
+    ul .menuBar, ul.menuBar li {
+        display: none;
+        padding: 0;
+        z-index: 2;
+        transition: 0.4s;
+    }
+    ul .menuBar {
+        top: -2em;
+    }
+    #tonggle-menu {
+        position: relative;
+        top: -10px;
+        display: block;
+        width: 100%;
+        background: #bdc3c7;
+        z-index: 1;
+    }
+    #icon-menu {
+        font-size: 35px;
+        margin-left: 0.5em;
+    }
+    #check:checked ~ ul.menuBar li {
+        display: block;
+        width: 100%;
+    }
+
+    ul.menuBar .fa {
+        margin-left: 10px;
+    }
+    ul.menuBar li a {
+        margin-left: 20px;
+    }
+
+    #search {
+          display:none;
+    }
+
+    i.fa.fa-music {
+        position: relative;
+        left: -650%;
+    }
+}

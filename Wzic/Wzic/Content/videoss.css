@@ -31,6 +31,7 @@ body {
 /*---------present the video choosed from lists(on the right)--------------*/
 /*-----------------------*/
 #container-show-video {
+    background-image: url('../images/Videos/bgrMusic2.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     border-top-right-radius: 1em;

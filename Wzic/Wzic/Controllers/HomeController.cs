@@ -37,12 +37,12 @@ namespace Wzic.Controllers
             for (int i = 0; i < art.Count; i++)
             {
                 str += " <div class='swiper-slide'> ";
-                str += "<div class='front'> <img nth = " + i + " src=" + art[i].Img + " width='400' height='400'></div>";
+                str += "<div class='front'> <img nth = " + i + " src=" + art[i].Img + "></div>";
                 str += "<div class='back'> ";
                 str += " <div class='social'> ";
-                str += " <a href =" + art[i].Facebook + " ><i class='fa fa-facebook'></i></a> ";
-                str += " <a href = " + art[i].Instagram + " ><i class='fa fa-instagram'></i></a> ";
-                str += " <a href = " + art[i].Twister + " ><i class='fa fa-twitter'></i></a> ";
+                str += " <a href =" + art[i].Facebook + " target=\"_blank\" ><i class='fa fa-facebook'></i></a> ";
+                str += " <a href = " + art[i].Instagram + " target=\"_blank\"><i class='fa fa-instagram'></i></a> ";
+                str += " <a href = " + art[i].Twister + " target=\"_blank\"><i class='fa fa-twitter'></i></a> ";
                 str += " </div> ";
 
                 str += " <span class='infoArt'> ";

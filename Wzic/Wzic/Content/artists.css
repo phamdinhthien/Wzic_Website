@@ -1,0 +1,150 @@
+/* CSS Document */
+#Artists {
+    background: #2c3e50;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 400px;
+	height: 400px;
+	box-sizing: border-box;
+}
+
+.front img {
+    width: 400px;
+    height: 400px;
+}
+
+.front, .back{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	transition:0.5s;
+	backface-visibility:hidden;
+}
+.front{
+	transform:rotateY(0deg);
+	overflow:hidden;
+	}
+.back{
+	background-image: -webkit-linear-gradient(top, aqua, mediumpurple,aqua);
+	transform:rotateY(180deg);
+	}
+.swiper-slide:hover .front{
+			transform:rotateY(-180deg);
+	}
+.social i.fa{
+	color:white;
+	font-size: 52px;
+	margin: 20px;
+	transition:0.4s;
+	}
+.swiper-slide:hover .back{
+	transform:rotateY(0deg);
+	}
+.social{
+	display: flex;
+	flex-direction:  column;
+	position:absolute;
+	top: 50%;
+	left: 12%;
+	transform: translate(0%, -50%);
+	}
+span.infoArt{
+	font-size: 30px;
+	position: absolute;
+	border-radius: 5px;
+	left: 40%;
+	top: 20%;
+	font-weight: bold;
+	width: 53%;
+	height: 80%;
+	word-wrap:  break-word;
+	color: lemonchiffon;
+	background:transparent;
+	}
+
+a:hover .fa{
+	color: #ffff00e0;
+    text-shadow: 0 0 15px yellow;
+	}
+
+q{
+	quotes: "“" "”";
+	font-size: 16px;
+	font-weight:none;
+	color:#CCC;
+	}
+
+.NextOrPre{
+	display:flex;
+	justify-content: center;
+	}
+.NextOrPre i{
+	font-size:30px;
+	color:#000;
+	cursor:pointer;
+	}
+	
+.swiper-button-next, .swiper-button-prev{
+	
+	position:absolute;
+	top:90%;
+}
+
+.swiper-button-next{
+	right: 40%;
+	}
+
+.swiper-button-prev{
+	left: 40%;
+	}
+
+@media only screen and (max-width: 380px) {
+    .swiper-slide, .front img {
+        width: 250px;
+        height: 250px;
+    }
+
+    q {
+        font-size: 12px;
+    }
+
+    span.infoArt {
+        font-size: 25px;
+    }
+
+    .social i.fa {
+        font-size: 40px;
+    }
+
+    
+    }
+
+@media only screen and (max-width: 1255px) {
+    .swiper-slide, .front img {
+        width: 350px;
+        height: 350px;
+    }
+    q {
+        font-size: 15px;
+    }
+
+    span.infoArt {
+        font-size: 30px;
+    }
+
+    .social i.fa {
+        font-size: 45px;
+    }
+}
