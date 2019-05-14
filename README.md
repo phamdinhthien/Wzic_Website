@@ -5,9 +5,10 @@
 3.	Trần Lê Hoàng Sơn (23%)
 4.	Trịnh Thanh Tùng (23%)
 
-Text Editor: Visual Studio 2017
-Programming Language : HTML, CSS, JS, C#
-Database : SQL Server
-Framework : ASP.NET, Bootstrap, Jquery
-Process model : Waterfall Model
+	Orther :
+1.  Text Editor: Visual Studio 2017
+2.  Programming Language : HTML, CSS, JS, C#
+3.  Database : SQL Server
+4.  Framework : ASP.NET, Bootstrap, Jquery
+5.  Process model : Waterfall Model
 
